@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSC</title>
+    <link rel="icon" type="image/png" href="img/LogoO.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo de la empresa">
+        </div>
+
+        <button class="hamburger" id="hamburger-btn" aria-label="Abrir menú">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="nav-menu" id="nav-menu">
+            <ul>
+                <li><a href="#inicio">INICIO</a></li>
+                <li><a href="#nosotros">NOSOTROS</a></li>
+                <li><a href="#catalogo">CATÁLOGO</a></li>
+                <li><a href="#clientes">CLIENTES</a></li>
+                <li><a href="#contacto">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <div class="presentacion">
+                <div class="texto">
+            <h1>Soluciones industriales <br> con calidad y confianza</h1>
+            <p>En CSC ofrecemos una amplia gama de servicios para satisfacer tus necesidades, con más de 20 años de experiencia 
+            fabricando cajas de seguridad y soluciones de herrería industrial en toda Centroamérica. Nuestro catálogo incluye productos 
+            de alta calidad y un equipo dedicado a brindarte la mejor experiencia.</p>
+            <a href="#catalogo">
+                <button>CONOCE NUESTROS PRODUCTOS ></button>
+            </a>
+                </div>
+
+                <div class="imagen">
+                    <div class="medalla">
+                        <img src="img/medalla.jpg" alt="Medalla de calidad">
+                    </div>
+                </div>
+            </div>    
+            <div class="features">
+                <div class="feature-item">
+                    <img src="img/Calidad.png" alt="Icono de calidad">
+                    <h3 class="feature-title">CALIDAD GARANTIZADA</h3>
+                    <p class="feature-text">Productos elaborados con materiales de alta calidad.</p>
+                </div>
+
+                <div class="feature-item">
+                    <img src="img/Servicio.png" alt="Icono de servicio">
+                    <h3 class="feature-title">SERVICIO PERSONALIZADO</h3>
+                    <p class="feature-text">Soluciones a la medida de las necesidades de cada cliente.</p>
+                </div>
+
+                <div class="feature-item">
+                    <img src="img/Experiencia.png" alt="Icono de experiencia">
+                    <h3 class="feature-title">EXPERIENCIA</h3>
+                    <p class="feature-text">Más de 20 años de experiencia en el mercado industrial.</p>
+                </div>
+
+                <div class="feature-item">
+                    <img src="img/Soporte.png" alt="Icono de soporte">
+                    <h3 class="feature-title">SOPORTE POSTVENTA</h3>
+                    <p class="feature-text">Respaldo y soporte técnico garantizado.</p>
+                </div>
+
+                <div class="feature-item">
+                    <img src="img/Cobertura.png" alt="Icono de cobertura regional">
+                    <h3 class="feature-title">COBERTURA REGIONAL</h3>
+                    <p class="feature-text">Atendemos empresas en Guatemala y Centroamérica.</p>
+                </div>
+            </div>    
+        </section>
+
+        <section id="nosotros">
+            <div class="nosotros">
+                 <div class="texto">
+            <h2>Conozca más sobre Corporación San Cristóbal S.A.</h2>
+            <p>Somos una empresa guatemalteca que, gracias al apoyo y confianza de nuestros clientes hemos brindado diversos productos
+            y servicios de calidad en el área industrial por más de 20 años.</p>
+           <br><p>Nuestro compromiso es ofrecer soluciones que impulsen el desarrollo de nuestros clientes con eficiencia y seguridad.</p>
+
+                <button id="mas-nosotros">MÁS SOBRE NOSOTROS</button>
+
+                <dialog id="miModal">
+                <form method="dialog">
+                    <h2>Nuestro lema es <br>"SERVICIO PERSONALIZADO"</h2>
+                    <p>Su empresa es importante para nosotros y estamos comprometidos a
+                    brindarles productos y servicios de calidad ofreciendo valores agregados
+                    como el respaldo y soporte posventa cuando lo requieran.
+                    Cada producto ofrecido es elaborado con materiales de calidad, con diseño y
+                    medidas específicas que se adaptan a la necesidad de cada cliente.
+                    Somos la mejor opción para el desarrollo de sus proyectos, contáctenos y
+                    solicite su cotización.</p>
+                    <!-- El botón con method="dialog" cierra el modal automáticamente -->
+                    <button id="cerrarBtn">Cerrar</button>
+                </form>
+                </dialog>
+                </div>
+                <div class="logo2">
+                    <img src="img/Logo.png" alt="Logo de la empresa">
+                </div>    
+            </div>
+        </section>
+
+        <section id="catalogo">
+            <div class="catalogo">
+            <h2>NUESTROS PRODUCTOS Y SERVICIOS</h2>
+            </div>    
+            <div class="caracteristicas">
+                <div class="carac-item">
+                    <img src="img/Cajas.jpeg" alt="Icono de cajas fuertes">
+                    <div class="carac-info">
+                        <h3 class="carac-title">CAJILLAS, CAJAS FUERTES Y BUZONES</h3>
+                        <p class="carac-text">con chapa mecánica, eléctrica y de combinación.</p>
+                    </div>
+                </div>
+
+                <div class="carac-item">
+                    <img src="img/Defensa.png" alt="Icono de defensas">
+                    <div class="carac-info">
+                        <h3 class="carac-title">DEFENSAS</h3>
+                        <p class="carac-text">Defensas para todo tipo de vehículos.</p>
+                    </div>
+                </div>
+
+                <div class="carac-item">
+                    <img src="img/Furgones.jpeg" alt="Icono de furgones">
+                    <div class="carac-info">
+                        <h3 class="carac-title">FURGONES</h3>
+                        <p class="carac-text">Reparación de furgones, palanganas y soldaduras en chasis.</p>
+                    </div>
+                </div>
+
+                <div class="carac-item">
+                    <img src="img/Division.png" alt="Icono de divisiones">
+                    <div class="carac-info">
+                        <h3 class="carac-title">DIVISIONES PARA PANELES</h3>
+                        <p class="carac-text">Instalación de divisiones para paneles y protección.</p>
+                    </div>
+                </div>
+
+                <div class="carac-item">
+                    <img src="img/Mecanica.jpg" alt="Icono de servicios mecánicos">
+                    <div class="carac-info">
+                        <h3 class="carac-title">SERVICIOS MECÁNICOS</h3>
+                        <p class="carac-text">Servicios mecánicos y electromecánicos con stock de repuestos.</p>
+                    </div>
+                </div>
+                
+                <div class="carac-item">
+                    <img src="img/Metalica.png" alt="Icono de herreria">
+                    <div class="carac-info">
+                        <h3 class="carac-title">HERRERIA Y ESTRUCTURAS METÁLICAS</h3>
+                        <p class="carac-text">Herrería en general, fabricación y reparaciones en estructuras metálicas.</p>
+                    </div>
+                </div>
+            </div>
+
+            <button id="btn-catalogo">VER TODOS LOS PRODUCTOS</button>
+                <dialog id="CatalogoModal">
+                <form method="dialog">
+
+                    <div class="caracteristicasModal">
+                        <div class="carac-item">
+                            <img src="img/Cajas.jpeg" alt="Icono de cajas fuertes">
+                            <div class="carac-info">
+                                <h3 class="carac-title">CAJILLAS, CAJAS FUERTES Y BUZONES</h3>
+                                <p class="carac-text">con chapa mecánica, eléctrica y de combinación.</p>
+                            </div>
+                        </div>
+
+                        <div class="carac-item">
+                            <img src="img/Defensa.png" alt="Icono de defensas">
+                            <div class="carac-info">
+                                <h3 class="carac-title">DEFENSAS</h3>
+                                <p class="carac-text">Defensas para todo tipo de vehículos.</p>
+                            </div>
+                        </div>
+
+                        <div class="carac-item">
+                            <img src="img/Furgones.jpeg" alt="Icono de furgones">
+                            <div class="carac-info">
+                                <h3 class="carac-title">FURGONES</h3>
+                                <p class="carac-text">Reparación de furgones, palanganas y soldaduras en chasis.</p>
+                            </div>
+                        </div>
+
+                        <div class="carac-item">
+                            <img src="img/Division.png" alt="Icono de divisiones">
+                            <div class="carac-info">
+                                <h3 class="carac-title">DIVISIONES PARA PANELES</h3>
+                                <p class="carac-text">Instalación de divisiones para paneles y protección.</p>
+                            </div>
+                        </div>
+
+                        <div class="carac-item">
+                            <img src="img/Mecanica.jpg" alt="Icono de servicios mecánicos">
+                            <div class="carac-info">
+                                <h3 class="carac-title">SERVICIOS MECÁNICOS</h3>
+                                <p class="carac-text">Servicios mecánicos y electromecánicos con stock de repuestos.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="carac-item">
+                            <img src="img/Estanterias.png" alt="Icono de estanteria">
+                            <div class="carac-info">
+                                <h3 class="carac-title">ESTANTERÍAS A LA MEDIDA</h3>
+                                <p class="carac-text">Diseño y fabricación de estanterías metálicas resistentes, adaptadas a tus espacios y necesidades de almacenamiento.</p>
+                            </div>
+                        </div>
+
+                        <div class="carac-item">
+                            <img src="img/FurgonF.jpeg" alt="Icono de furgon frio">
+                            <div class="carac-info">
+                                <h3 class="carac-title">FURGONES REFRIGERADOS Y TÉRMICOS</h3>
+                                <p class="carac-text">Reparación, sellado y mantenimiento de furgones para transporte de producto congelado y refrigerado.</p>
+                            </div>
+                        </div>
+
+                        <div class="carac-item">
+                            <img src="img/Metalica.png" alt="Icono de herreria">
+                            <div class="carac-info">
+                                <h3 class="carac-title">HERRERIA Y ESTRUCTURAS METÁLICAS</h3>
+                                <p class="carac-text">Herrería en general, fabricación y reparaciones en estructuras metálicas.</p>
+                            </div>
+                        </div>
+
+                         <div class="carac-item">
+                            <img src="img/trocket.jpg" alt="Icono de trockets">
+                            <div class="carac-info">
+                                <h3 class="carac-title">TROCKETS</h3>
+                                <p class="carac-text">trocket manual, práctico y resistente para el manejo y transporte de carga.</p>
+                            </div>
+                        </div>
+
+                         <div class="carac-item">
+                            <img src="img/Cajachica.jpg" alt="Icono de cajachica">
+                            <div class="carac-info">
+                                <h3 class="carac-title">CAJAS CHICAS</h3>
+                                <p class="carac-text">Cajas metálicas seguras y portátiles, ideales para el resguardo y organización de documentos.</p>
+                            </div>
+                        </div>
+
+                        <div class="carac-item">
+                            <img src="img/Gabinete.png" alt="Icono de gabinete">
+                            <div class="carac-info">
+                                <h3 class="carac-title">GABINETES DE LLAVES</h3>
+                                <p class="carac-text">Organizadores metálicos de pared con cerradura para el control y resguardo seguro de múltiples juegos de llaves.</p>
+                            </div>
+                        </div>
+
+                        <div class="carac-item">
+                            <img src="img/Chapa.jpeg" alt="Icono de chapa">
+                            <div class="carac-info">
+                                <h3 class="carac-title">VARIEDAD DE CHAPAS</h3>
+                                <p class="carac-text">AMPLIA gama de cerraduras de alta seguridad y repuestos para puertas, portones y cajas fuertes.</p>
+                            </div>
+                        </div>
+
+                        <div class="carac-item">
+                            <img src="img/Kit.jpeg" alt="Icono de Kit">
+                            <div class="carac-info">
+                                <h3 class="carac-title">EQUIPO DE SEGURIDAD</h3>
+                                <p class="carac-text">Kits y accesorios de protección industrial diseñados para flotas y edificios.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <button id="cerrarBtn">Cerrar</button>
+                </form>
+                </dialog>
+        </section>
+
+        <section id="clientes">
+            <div class="Clientes-titulo">
+                <h2>ALGUNOS DE NUESTROS CLIENTES</h2>
+            </div>
+            <div class="clientes">
+                <div class="imagenes">
+                    <img id="sec1" src="img/Dinant.png" alt="Cliente 1">
+                    <img src="img/Capistrano.png" alt="Cliente 2">
+                    <img src="img/Nestle.png" alt="Cliente 3">
+                    <img src="img/soprinsa.png" alt="Cliente 4">
+                    <img src="img/kerns.png" alt="Cliente 5">
+                    <img src="img/zetagas.png" alt="Cliente 6">
+                    <img src="img/anabelly.png" alt="Cliente 7">
+                    <img src="img/lapopular.png" alt="Cliente 8">
+                    <img src="img/pepsico.png" alt="Cliente 9">
+                    <img src="img/Solid.png" alt="Cliente 10">
+                    <img src="img/Ransa.png" alt="Cliente 11">
+                    <img src="img/Bofasa.png" alt="Cliente 12">
+                    <img id="sec2" src="img/Pozuelo.png" alt="Cliente 13">
+                </div>
+                <div class="btn-scroll">
+                    <a href="#sec1"></a>
+                    <a href="#sec2"></a>
+                </div>
+            </div>    
+
+        </section>
+    </main>
+
+    <footer>
+        <section id="contacto">
+        <div class="contacto">
+            <div class="info">
+                <h2>¿Listo para iniciar su proyecto?</h2>
+                <p>Si deseas más información sobre nuestros productos y servicios, no dudes en contactarnos.</p>
+            </div>
+            <div class="contact">
+                <p>Teléfonos: 5630 4570 - 4181 4915</p>
+                <p>Correo: cscdeguatemala@outlook.com</p>
+            </div>
+            <a href="mailto:cscdeguatemala@outlook.com">
+                <button>CONTÁCTANOS</button></a>
+            </a>
+        </div>
+        </section>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
