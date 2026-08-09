@@ -1,0 +1,538 @@
+body {
+   font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    scroll-margin-top: 90px; /* Cambia 90px por la altura real de tu header */
+}
+
+header {
+    background-color: #011c39;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;           
+    padding: 0px 40px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    box-sizing:border-box;
+    z-index: 1000;
+}
+
+.logo img {
+  width: 140px;
+  height: auto; 
+  padding: 10px;
+  filter: invert(100%);
+}
+
+nav ul{
+  display: flex;
+  gap: 60px;    
+  list-style: none; 
+  padding: 20px; 
+
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;   
+  font-weight: bold;
+
+}
+
+nav ul li a:hover {
+    color: #ffb703;
+}
+
+.hamburger {
+  display: none; /* No se muestra en computadoras */
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* Estilo para las 3 líneas */
+.hamburger span {
+  width: 100%;
+  height: 3px;
+  background-color: #ffffff;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+main {
+    padding-top: 100px; /* Ajusta este valor según la altura real de tu header */
+}
+
+.presentacion{
+    background-image: url('img/fondo3.png');
+    color: white;
+    padding: 50px 40px;
+    display: flex;
+    align-items: flex-start;         /* Centra verticalmente la medalla con el texto */
+
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    /* SOLUCIÓN A LA DISTANCIA: En lugar de un % gigante, usa un espacio fijo o distribuidor */
+    justify-content: space-between; 
+}
+
+.texto {
+    flex: 1;
+    max-width: 650px; /* Evita que el texto invada el lado del soldador */
+}
+
+.imagen {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Alinea la medalla a la derecha de forma controlada */
+    
+}
+
+.texto h1{
+  font-size: 46px;
+  margin-bottom: 20px;
+  line-height: 1.2;
+
+}
+
+.texto p{
+  display: grid;
+  gap: 15px;
+  font-size: 20px;
+
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.medalla img {
+    width:150px;
+    padding:40px;
+    margin-right:0;
+
+}
+
+/* 1. El contenedor principal (La gran barra blanca) */
+.features {
+    display: flex;                  /* Pone los 5 elementos en fila */
+    justify-content: space-between; /* Distribuye el espacio equitativamente */
+    background-color: #ffffff;      /* Fondo blanco */
+    padding: 30px 20px;             /* Espacio interno arriba/abajo y a los lados */
+}
+
+/* 2. Cada una de las 5 cajitas individuales */
+.feature-item {
+    flex: 1;                        /* Hace que las 5 cajas midan exactamente lo mismo */
+    text-align: center;             /* Centra todo el contenido (iconos, títulos y párrafos) */
+    padding: 0 15px;                /* Espacio a los lados para que los textos no se peguen */
+}
+
+/* 3. El truco de las líneas divisorias grises */
+.feature-item:not(:last-child) {
+    border-right: 1px solid #e2e8f0; /* Línea gris delgada */
+}
+
+/* 4. Estilos para los textos internos */
+.feature-title {
+    font-size: 0.95rem;             /* Tamaño de letra compacto y elegante */
+    color: #051429;                 /* El azul oscuro corporativo de CSC */
+    margin-top: 15px;               /* Separa el título del icono de arriba */
+    margin-bottom: 8px;             /* Separa el título del párrafo de abajo */
+    font-weight: bold;
+    letter-spacing: 0.5px;          /* Un poco de espacio entre letras */
+}
+
+.feature-text {
+    font-size: 0.88rem;             /* Letra más pequeña para la descripción */
+    color: #051429;                 /* Color gris azulado suave */
+    line-height: 1.4;               /* Espaciado cómodo entre líneas de texto */
+}
+
+.feature-item img {
+    height: 60px;                   /* Ajusta la altura de los iconos a tu gusto */
+    width: auto;
+    margin: 0 auto;
+}
+
+.nosotros{
+    background-color: #011c39;
+    color: white;
+    padding: 50px 40px;
+    display: flex;
+    align-items: flex-start;         /* Centra verticalmente la medalla con el texto */
+    
+    /* SOLUCIÓN A LA DISTANCIA: En lugar de un % gigante, usa un espacio fijo o distribuidor */
+    justify-content: space-between; 
+
+}
+
+.texto h2{
+  display: grid;
+  gap: 15px;
+  font-size: 35px;
+
+}
+
+.nosotros .texto p{
+  display: grid;
+  gap: 15px;
+  font-size: 18px;
+
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.logo2 img {
+  width: 440px;
+  height: auto; 
+  padding: 15px;
+  filter: invert(100%);
+}
+
+button {
+    background-color: #ffb703;
+    color: #011c39;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+dialog {
+  border: none;
+  border-radius: 8px;
+  padding: 35px;
+  width: 90%;
+  max-width: 800px;
+
+  color: #011c39;
+  font-size: 20px;
+}
+
+dialog h2 {
+    text-align:center;
+    margin-top:0;
+}
+
+#CatalogoModal::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#CatalogoModal {
+  border: none;
+  border-radius: 8px;
+  padding: 30px 15px;       /* Reducimos ligeramente el padding lateral para ganar espacio */
+  width: 90%;
+  max-width: 800px;
+  max-height: 80vh;
+  overflow: hidden;         /* Mantiene el borde redondeado limpio */
+  color: #011c39;
+  font-size: 20px;
+  box-sizing: border-box;   /* Incluye el padding dentro del cálculo del ancho total */
+}
+
+.caracteristicasModal {
+  display: grid;                
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 20px;                /* Ajustamos a 20px para dar más espacio horizontal a las tarjetas */
+  background-color: #ffffff;      
+  padding: 15px;            
+  max-height: 55vh;             
+  
+  /* CONTROL DE SCROLLBARS */
+  overflow-y: auto;         /* Activa la barra vertical cuando sea necesario */
+  overflow-x: hidden;       /* ELIMINA definitivamente el scroll horizontal */
+  box-sizing: border-box;
+}
+
+/* Evita que los ítems del grid fuercen un ancho mínimo mayor a su columna */
+.caracteristicasModal .carac-item {
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+/* ESTILOS DE LA BARRA DE SCROLL VERTICAL */
+.caracteristicasModal::-webkit-scrollbar {
+  width: 8px;                   
+}
+
+.caracteristicasModal::-webkit-scrollbar-thumb {
+  background-color: #c1c1c1;
+  border-radius: 10px;          
+}
+
+.caracteristicasModal::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.catalogo {
+    padding: 5px 5px;
+    text-align: center;
+    color: #011c39;
+    padding-bottom: 5px;
+    border-bottom: 3px solid #e2e8f0; /* Línea gris delgada */
+}
+
+
+.caracteristicas {
+    display: grid;                 /* Pone los 5 elementos en fila */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px;
+    background-color: #ffffff;      /* Fondo blanco */
+    padding: 20px 60px;             /* Espacio interno arriba/abajo y a los lados */
+}
+
+/* 2. Cada una de las 5 cajitas individuales */
+.carac-item {
+    display: flex;                  /* Convierte el interior de la caja en Flexbox */
+    flex-direction: row;            /* Pone la imagen y el texto uno al lado del otro */
+    align-items: center;            /* Centra verticalmente la imagen con el texto */
+    gap: 25px;                      /* Espacio entre la imagen y el bloque de texto */
+    padding: 10px 15px;
+    border: 2px solid #e2e8f0;      /* Bordes simplificados en una sola línea */
+    border-radius: 8px;
+}
+
+
+/* 4. Estilos para los textos internos */
+.carac-title {
+    font-size: 1.30rem;             /* Tamaño de letra compacto y elegante */
+    color: #051429;                 /* El azul oscuro corporativo de CSC */
+    margin-top: 0;               /* Separa el título del icono de arriba */
+    margin-bottom: 5px;             /* Separa el título del párrafo de abajo */
+    font-weight: bold;
+    letter-spacing: 0.5px;          /* Un poco de espacio entre letras */           
+}
+
+.carac-text {
+    font-size: 1.00rem;             /* Letra más pequeña para la descripción */
+    color: #051429;                 /* Color gris azulado suave */
+    line-height: 1.4;               /* Espaciado cómodo entre líneas de texto */
+    margin: 0;                      /* Elimina márgenes innecesarios */
+}
+
+.carac-item img {
+    height: 150px;                   /* Ajusta la altura de los iconos a tu gusto */
+    width: 150px;
+}
+
+#btn-catalogo, #cerrarBtn {
+    background-color: #ffff;
+    color: #011c39;
+    border: 2px solid #011c3952;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: bold;
+    display: block; /* Hace que el botón sea un bloque para centrarlo */
+    margin: 20px auto 0; /* Lo centra en la página */
+    
+}
+
+#catalogo a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none; /* Le quita cualquier subrayado feo al enlace */
+}
+
+.Clientes-titulo h2 {
+    text-align: center;
+    padding: 20px 0; 
+    color: #011c39;
+}
+
+.clientes {
+    max-width: 1550px; /* Limita el ancho máximo para que no se vea demasiado grande*/
+    width: 90%; /* Asegura que ocupe todo el ancho disponible hasta el máximo */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    position: relative; /* Necesario para posicionar los botones de scroll */
+}
+
+.imagenes {
+    display: flex;
+    align-items: center;            /* Centra verticalmente los logos */
+    justify-content: space-between; /* Reparte los logos uniformemente */
+    gap: 70px;                      /* Espacio constante entre logos */
+    overflow-x: scroll;   
+    scroll-snap-type: x mandatory;    
+    scroll-behavior: smooth; 
+    padding: 20px 0;     
+}
+
+.imagenes::-webkit-scrollbar {
+    display: none; /* Oculta la barra de desplazamiento en navegadores WebKit */
+}
+
+.imagenes img{
+    height: 50px;       /* Controla la altura para que no crezca a lo alto */
+    width: auto;        /* Mantiene la proporción de cada logo */
+    flex-shrink: 0;     /* Evita que los logos se aplasten */
+}
+
+.btn-scroll{
+    display: flex;
+    justify-content: center; /* Centra los botones horizontalmente */
+    gap: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.btn-scroll a{
+    width: .8rem;
+    height: .8rem;
+    background-color: #011c39;
+    border-radius: 50%;
+}
+
+.contacto{
+    background-color: #011c39;
+    color: white;
+    padding: 50px 80px;
+    display: flex;
+    align-items: flex-start;        
+    justify-content: space-between;
+    font-size: 18px;
+}
+
+
+
+@media (max-width:768px){
+
+/* 2. MOSTREAMOS EL BOTÓN HAMBURGUESA EN MÓVIL */
+  .hamburger {
+    display: flex; 
+  }
+
+  /* 3. OCULTAMOS EL MENÚ HORIZONTAL Y LO VOLVEMOS VERTICAL */
+  .nav-menu {
+    display: none; /* Se oculta por defecto en móviles */
+    position: absolute;
+    top: 90px; /* Se posiciona debajo del header */
+    left: 0;
+    width: 100%;
+    background-color: #011c39;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    gap: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+
+  /* 4. CLASE QUE ACTIVA EL JS PARA DESPLEGAR EL MENÚ */
+  .nav-menu.active {
+    display: flex; /* Al hacer clic se muestra */
+  }
+
+    
+section {
+    scroll-margin-top: 150px; /* Cambia 90px por la altura real de tu header */
+}    
+
+.texto h1{
+    font-size:32px;
+}
+
+.texto p{
+    font-size:16px;
+}
+
+.presentacion{
+    flex-direction:column;
+    text-align:center;
+    padding:40px 20px;
+}
+
+.texto{
+    max-width:100%;
+}
+
+.imagen{
+    margin-top:20px;
+}
+
+.medalla img{
+    width:120px;
+    margin:0;
+    padding:10px;
+}
+
+.features{
+    flex-direction:column;
+}
+
+.feature-item{
+    border-right:none;
+    border-bottom:1px solid #ddd;
+    padding:20px;
+}
+
+.feature-item:last-child{
+    border-bottom:none;
+}
+
+.caracteristicas,.caracteristicasModal{
+    grid-template-columns:1fr;
+    padding:20px;
+}
+
+.carac-item{
+    flex-direction:column;
+    text-align:center;
+}
+
+.carac-item img{
+    width:120px;
+    height:120px;
+}
+
+.nosotros{
+    flex-direction:column;
+    text-align:center;
+}
+
+.logo2 img{
+    width:250px;
+    margin:auto;
+}
+
+.contacto{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+nav ul{
+    gap:15px;
+    padding:10px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+}
